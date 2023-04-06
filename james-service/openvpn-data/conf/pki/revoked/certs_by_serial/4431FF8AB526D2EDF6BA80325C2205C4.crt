@@ -1,0 +1,84 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            44:31:ff:8a:b5:26:d2:ed:f6:ba:80:32:5c:22:05:c4
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=boyson
+        Validity
+            Not Before: Feb 21 14:31:10 2023 GMT
+            Not After : May 26 14:31:10 2025 GMT
+        Subject: CN=Pongsatorn_SAWANGKLAO
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:ef:5c:b0:89:f9:bd:da:84:02:90:98:46:5c:d1:
+                    c2:05:65:ba:1d:30:67:64:9f:4c:f5:0e:87:d1:be:
+                    53:31:ee:94:df:85:ed:cc:68:7c:b3:11:ae:41:9f:
+                    78:4f:7c:05:c0:39:5d:07:40:29:95:88:14:4b:cc:
+                    c2:4e:04:4a:b6:b1:5b:23:ef:32:7e:4b:af:d9:7a:
+                    c5:ff:b8:d5:f8:f4:da:fb:ce:c0:12:1e:3e:17:39:
+                    0b:57:cd:94:30:e3:86:28:2f:7a:b4:d5:a8:34:1e:
+                    2e:c2:78:88:ea:a2:6d:dd:7e:78:ba:fd:79:0c:c3:
+                    e8:db:af:23:fb:d2:b9:61:66:09:41:e7:c5:5b:6a:
+                    1c:81:c9:3b:08:d7:91:2b:89:e2:ae:a0:fe:af:c7:
+                    9c:60:de:f3:1f:96:f8:67:6d:0f:eb:f2:74:19:9c:
+                    59:57:ed:c3:a2:c8:c3:0a:c9:7f:fd:b3:29:ce:2b:
+                    81:59:33:e3:26:7f:f0:f9:32:ea:39:ec:66:ea:76:
+                    98:5b:35:07:11:33:a8:66:20:fc:60:0a:e5:49:a7:
+                    26:25:2a:08:4b:eb:18:16:fd:15:ba:f3:4e:60:ff:
+                    04:70:42:1c:45:1a:e8:ad:e2:08:7f:69:8b:9b:ce:
+                    24:ea:c6:6c:89:6a:f2:1c:25:df:83:1a:77:d9:21:
+                    20:fd
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                A7:A5:B6:CA:E8:62:FB:17:CA:22:CE:BB:85:92:30:4D:5D:8C:58:75
+            X509v3 Authority Key Identifier: 
+                keyid:FF:1F:1F:0E:F4:6E:BB:36:63:FF:5E:9A:F1:3B:D6:4F:78:0D:A1:80
+                DirName:/CN=boyson
+                serial:07:CD:EA:4E:7F:98:34:2C:F6:34:76:E0:5C:91:D7:70:FC:23:97:B7
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha256WithRSAEncryption
+         26:7a:6d:68:cd:98:55:93:4a:be:b4:c0:ee:aa:c2:f2:1e:63:
+         76:d0:80:56:ea:06:44:af:82:c6:87:02:8e:65:a3:29:ed:f7:
+         cd:fb:7c:ef:5a:7c:37:19:1a:06:4d:0e:33:61:9c:42:16:85:
+         3b:67:41:2a:a7:59:d7:73:01:ac:0b:22:fd:cb:21:de:b2:31:
+         50:04:9c:e6:c6:39:46:03:b2:c6:b8:7b:0d:3f:b3:a2:d9:f6:
+         b5:34:64:12:78:62:91:24:2f:15:b0:7e:89:f7:78:07:bb:fa:
+         22:d3:99:fe:a5:03:de:00:bc:2e:8f:04:b9:96:ea:77:dc:62:
+         3d:82:86:de:d1:de:9d:a9:7a:a5:10:50:70:e9:39:ea:f5:52:
+         7f:7d:f4:a6:65:1b:3e:cf:a1:95:e8:55:76:20:14:26:48:d0:
+         ec:a1:70:96:94:f4:04:59:bf:e2:3c:16:f1:b5:ef:ab:aa:b6:
+         a2:55:d5:ed:46:97:d1:24:02:1a:bd:57:4b:5d:34:7b:71:6f:
+         99:81:99:86:86:c6:ad:0f:e0:c1:d6:8e:b9:0c:87:f8:b6:f4:
+         89:80:ef:a2:60:8d:d8:b7:19:b6:ae:b2:2d:11:94:73:a1:5f:
+         eb:10:ac:e1:c5:2f:16:c6:4c:ec:2a:9d:7b:34:2b:d0:10:68:
+         79:2e:10:e7
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIQRDH/irUm0u32uoAyXCIFxDANBgkqhkiG9w0BAQsFADAR
+MQ8wDQYDVQQDDAZib3lzb24wHhcNMjMwMjIxMTQzMTEwWhcNMjUwNTI2MTQzMTEw
+WjAgMR4wHAYDVQQDDBVQb25nc2F0b3JuX1NBV0FOR0tMQU8wggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQDvXLCJ+b3ahAKQmEZc0cIFZbodMGdkn0z1DofR
+vlMx7pTfhe3MaHyzEa5Bn3hPfAXAOV0HQCmViBRLzMJOBEq2sVsj7zJ+S6/ZesX/
+uNX49Nr7zsASHj4XOQtXzZQw44YoL3q01ag0Hi7CeIjqom3dfni6/XkMw+jbryP7
+0rlhZglB58VbahyByTsI15ErieKuoP6vx5xg3vMflvhnbQ/r8nQZnFlX7cOiyMMK
+yX/9synOK4FZM+Mmf/D5Muo57GbqdphbNQcRM6hmIPxgCuVJpyYlKghL6xgW/RW6
+805g/wRwQhxFGuit4gh/aYubziTqxmyJavIcJd+DGnfZISD9AgMBAAGjgZ0wgZow
+CQYDVR0TBAIwADAdBgNVHQ4EFgQUp6W2yuhi+xfKIs67hZIwTV2MWHUwTAYDVR0j
+BEUwQ4AU/x8fDvRuuzZj/16a8TvWT3gNoYChFaQTMBExDzANBgNVBAMMBmJveXNv
+boIUB83qTn+YNCz2NHbgXJHXcPwjl7cwEwYDVR0lBAwwCgYIKwYBBQUHAwIwCwYD
+VR0PBAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQAmem1ozZhVk0q+tMDuqsLyHmN2
+0IBW6gZEr4LGhwKOZaMp7ffN+3zvWnw3GRoGTQ4zYZxCFoU7Z0Eqp1nXcwGsCyL9
+yyHesjFQBJzmxjlGA7LGuHsNP7Oi2fa1NGQSeGKRJC8VsH6J93gHu/oi05n+pQPe
+ALwujwS5lup33GI9gobe0d6dqXqlEFBw6Tnq9VJ/ffSmZRs+z6GV6FV2IBQmSNDs
+oXCWlPQEWb/iPBbxte+rqraiVdXtRpfRJAIavVdLXTR7cW+ZgZmGhsatD+DB1o65
+DIf4tvSJgO+iYI3Ytxm2rrItEZRzoV/rEKzhxS8WxkzsKp17NCvQEGh5LhDn
+-----END CERTIFICATE-----

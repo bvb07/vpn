@@ -1,0 +1,36 @@
+version: '3'
+services:
+  ovpn_customix:
+    image : vpn_james_customix:v1
+    build : 
+      context: ./final_all_server
+      dockerfile: Dockerfile
+      
+    container_name: customix_vpn
+    ports:
+      - 3000:3000
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - vpn_network
+  
+ # openvpn:
+ #   cap_add:
+ #    - NET_ADMIN
+ #   image: kylemanna/openvpn
+ #  container_name: openvpn
+ #  ports:
+ #   - "1194:1194/udp"
+ #  restart: always
+ #  volumes:
+ #   - ./openvpn-data/conf:/etc/openvpn    
+ #   - ./cmd.sh:/gen_client_cmd.sh
+ #   - /etc/openvpn/easy-rsa:/etc/openvpn/easy-rsa
+ #   - ./openvpn-data/vpn/:/etc/openvpn/vpn
+ #  networks:
+ #    - vpn_network
+networks:
+  vpn_network:
+    external: true
+    name:  vpn_network

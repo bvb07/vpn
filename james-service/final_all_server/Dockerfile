@@ -1,0 +1,79 @@
+FROM node:bullseye
+# FROM sandrokeil/typescript:latest
+
+# Install 
+WORKDIR /app
+COPY package*.json ./
+COPY package-lock.json ./
+RUN apt-get update && \
+    apt-get install -y docker.io
+RUN echo "Y" | apt-get install expect
+RUN npm install
+
+# RUN  touch /var/run/docker.sock 
+# RUN chmod 666 /var/run/docker.sock
+# build
+# FROM base AS builder
+COPY components ./components
+COPY contexts ./contexts
+COPY next.config.js ./next.config.js
+COPY next-env.d.ts ./next-env.d.ts 
+COPY tsconfig.json ./
+COPY styles ./styles
+COPY hooks ./hooks
+COPY public ./public
+COPY utils ./utils
+COPY vpn ./vpn
+COPY .env .
+COPY .env.local .
+COPY server.js .
+COPY db.ts .
+COPY db.json .
+COPY .babelrc .
+COPY .eslintrc.json .
+COPY pages ./pages
+COPY . .
+
+RUN chmod 777 db.json
+RUN npm run build
+
+# production
+# FROM base AS runner
+# WORKDIR /app
+ENV NODE_ENV production
+USER root
+
+
+
+EXPOSE 3000
+ENV PORT 3000
+
+
+#NextAuth 
+ENV NEXTAUTH_SECRET TOT_Sonny_Boy
+ENV NEXTAUTH_URL https://james.customix.co/api/auth
+ENV NEXT_PUBLIC_GOOGLE_CLIENT_ID 106200362618-t9ncal8sinjg230ds9p4afhsigppa1pp.apps.googleusercontent.com
+ENV NEXT_PUBLIC_GOOGLE_CLIENT_SECRET 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
+
+#init e-mail admin
+ENV NEXT_PUBLIC_MAIL_GOOGLE=peeraphat.wai@customix.co
+
+
+
+#firebase
+ENV NEXT_PUBLIC_APIKEY AIzaSyCiE_OShryQ2akGhZiGgoeYm3GvrznHYmw
+ENV NEXT_PUBLIC_AUTHDOMAIN customix.firebaseapp.com
+ENV NEXT_PUBLIC_PROJECTID customix
+ENV NEXT_PUBLIC_STORAGE customix.appspot.com
+ENV NEXT_PUBLIC_MESSAGE 106200362618
+ENV NEXT_PUBLIC_APPID 1:106200362618:web:964923594b7f5d20fe15c3
+ENV NEXT_PUBLIC_WEB_APP=vpn
+
+
+#docker
+ENV NEXT_PUBLIC_CONTAINER_NAME=openvpn
+
+#ENV DOMAIN_NAME 54.254.41.104
+ENV DOMAIN_NAME=james.customix.c0
+
+CMD ["npm","start"]
